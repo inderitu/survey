@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e0e0e0;
+    font-family: 'Lato', sans-serif;
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* tittle section */
+div.title{
+    margin-bottom: 7.5%;
+}
+#title{
+    font-weight: 900;
+    font-size: 3vw;
+    margin-bottom: 2%;
+}
+#description{
+    letter-spacing: 5px;
+    font-size: 1vw;
+}
+
+/* official form section */
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 60vw;
+    text-align: center;
+    border-radius: 30px;
+    border-radius: 41px;
+    background: #e0e0e0;
+    box-shadow:  26px 26px 51px #bebebe,
+             -26px -26px 51px #ffffff;
+    padding: 5% 2%;
+}
+
+label{
+    align-self: flex-start;
+    margin-left: 17%;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+input{
+
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #fff;
+
+    width: 65%;
+    height: 40px;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 0 0 0 2%;
+}
+
+select{
+    align-self: flex-start;
+    margin-left: 17%;
+    border: none;
+    background: none;
+    outline: none;
+
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #fff;
+    
+    width: 65%;
+    height: 40px;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 0 0 0 2%;
+    appearance: none;
+    
+}
+
+
+
+textarea{
+    align-self: flex-start;
+    margin-left: 17%;
+    border: none;
+    background: none;
+    outline: none;
+
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #fff;
+    
+    width: 65%;
+    /* height: 40px; */
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding: 2% 2%;
+}
+
+button{
+    border: none;
+    background: none;
+    margin-bottom: 5%;
+
+    border-radius: 51px;
+    background: #d0cdcd;
+    box-shadow: inset -5px -5px 10px #bebebe,
+                inset 5px 5px 10px #e0dbdb;
+    height: 50px;
+    width: 40%;
+    transition: all 0.75s;
+    font-weight: 700;
+    font-size: 20px;
+}
+button:hover{
+    background: #d3d0d0;
+    transform: scale(1.1);
+   
+}
+.thanks{
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+/* mobile responsive */
+
+@media (max-width: 550px){
+    #survey-form{
+        width: 80vw;
+    }
+}
