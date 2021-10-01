@@ -268,7 +268,6 @@ button:hover{
 /* mobile responsive */
 
 @media (max-width: 550px){
-    /* font-size */
     #title{
         font-size: 4.5vw;
     }
@@ -301,5 +300,8 @@ button:hover{
     }
     .thanks{
         font-size: 3vw;
+    }
+    label.details-label, select, .question, div#response, textarea{
+        margin-left: 10%;
     }
 }
