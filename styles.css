@@ -8,7 +8,7 @@
 body{
     background: #e0e0e0;
     font-family: 'Lato', sans-serif;
-    padding: 5% 2%;
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,14 +46,14 @@ div.title{
     padding: 5% 2%;
 }
 
-label{
+label.details-label{
     align-self: flex-start;
     margin-left: 17%;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 2%;
 }
-input{
+input.details{
 
     border: none;
     background: none;
@@ -86,6 +86,88 @@ select{
     appearance: none;
     
 }
+
+.question{
+    align-self: flex-start;
+    margin-left: 17%;
+    margin-bottom: 2%;
+    font-weight: 700;
+    font-size: 20px;
+}
+p span{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+div#response{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-left: 17%;
+    height: 250px;
+    width: 65%;
+    margin-bottom: 2%;
+}
+
+div.response{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+}
+.option{
+    margin-left: 2%;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+}
+
+div.check{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background: #d0cdcd;
+    box-shadow: -1px -1px 3px #bebebe,
+                inset 2px 2px 6px #e0dbdb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+div.check:hover{
+    transform: scale(1.1);
+    transition: transform 0.7s;
+}
+
+
+div.check input{
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+div.check label{
+    cursor: pointer;
+}
+
+div.check label svg{
+    transform: scale(1.5);
+    color: #fff;
+}
+div.check label svg:hover{
+    color: black;
+}
+
+div.check input:checked~ label svg{
+    color: rgb(83, 83, 83);
+}
+
+
 
 
 

@@ -17,20 +17,20 @@
 
             
 
-            <label id="name-label" for="name">First Name</label>
-            <input id="name" name="name" type="text" placeholder= "Enter your first name">
+            <label class="details-label" id="name-label" for="name">First Name</label>
+            <input class="details" id="name" name="name" type="text" placeholder= "Enter your first name">
 
-            <label id="name-label" for="name">Second Name</label>
-            <input id="name" name="name" type="text" placeholder="Enter your second name">
+            <label class="details-label" id="name-label" for="name">Second Name</label>
+            <input class="details" id="name" name="name" type="text" placeholder="Enter your second name">
            
-            <label id="email-label" for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Enter your email address">
+            <label class="details-label" id="email-label" for="email">Email</label>
+            <input class="details" id="email" name="email" type="email" placeholder="Enter your email address">
 
-            <label id="number-label" for="number">Number</label>
-            <input id="number" name="number" type="number"  minlength="10" maxlength="10" placeholder="Phone nummber">
+            <label class="details-label" id="number-label" for="number">Number</label>
+            <input class="details" id="number" name="number" type="number"  minlength="10" maxlength="10" placeholder="Phone nummber">
 
             <!-- create dropdown menus -->
-            <label for="dropdown" id="drop-label">Choose your level of satisfaction with our designs:</label>
+            <label class="question" for="dropdown" id="drop-label">Choose your level of satisfaction with our designs:</label>
             <select name="dropdown" id="dropdown" >
                 <option disabled selected >Level of satisfaction:</option>
                 <option value="a">I really loved your design.</option>
@@ -41,12 +41,94 @@
             </select>
 
             <!-- create checkboxes -->
+
+            <p class="question">What did you love about Design Center? <span>(Check all that apply)</span> </p>
+            <div id="response">
+                <div class="response">
+                    <div class="check">
+                        <input id="one" type="checkbox" value="box" checked>
+                        <label for="one">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg>
+                        </label>
+                    </div>
+                    <p class="option">Working with the team.</p>
+                </div>
+
+                <div class="response">
+                    <div class="check">
+                        <input id="two" type="checkbox" value="box">
+                        <label for="two">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg>
+                        </label>
+                    </div>
+                    <p class="option">Our customer care service.</p>
+                </div>
+
+                <div class="response">
+                    <div class="check">
+                        <input id="three" type="checkbox" value="box">
+                        <label for="three">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg>
+                        </label>
+                    </div>
+                    <p class="option">Our designs.</p>
+                </div>
+
+                <div class="response">
+                    <div class="check">
+                        <input id="four" type="checkbox" value="box">
+                        <label for="four">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg>
+                        </label>
+                    </div>
+                    <p class="option"> Time it took to complete your project.</p>
+                </div>
+
+                <div class="response">
+                    <div class="check">
+                        <input id="five" type="checkbox" value="box">
+                        <label for="five">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg>
+                        </label>
+                    </div>
+                    <p class="option">The coffee.</p>
+                </div>
+                
+
+
+            </div>
+
+
+
+            <p class="question" >Will you work with Design Center in the future?</p>
+            <div id="responseTwo">
+                <input class="response emoji" name="Definitely" type="radio">
+                <label for="Definitely">Definitely</label>
+
+                <input class="response emoji" name="maybe" type="radio">
+                <label for="maybe">Maybe</label>
+
+                <input class="response emoji" type="radio" name="no" class="response">
+                <label for="no">No</label>
+            </div>
+            
+
         
 
 
 
             <!-- create checkboxes -->
-            <label for="comments">What would you like to see improved about Design center?</label>
+            <label class="question" for="comments">What would you like to see improved about Design center?</label>
             <textarea name="comments" id="comments" cols="30" rows="10" placeholder="You can be as detailed as possible..."></textarea>
 
             <button type="submit">submit</button>
