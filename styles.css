@@ -269,7 +269,7 @@ button:hover{
 
 @media (max-width: 550px){
     #title{
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
     #description{
         font-size: 2vw;
@@ -280,28 +280,28 @@ button:hover{
     }
 
     label.details-label{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .question{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     p span{
         font-size: 1.7vw;
     }
     .option{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     div.display label{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     button{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .thanks{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     label.details-label, select, .question, div#response, textarea{
-        margin-left: 10%;
+        margin-left: 5%;
     }
 }
