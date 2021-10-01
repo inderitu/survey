@@ -301,7 +301,4 @@ button:hover{
     .thanks{
         font-size: 3.5vw;
     }
-    label.details-label, select, .question, div#response, textarea{
-        margin-left: 5%;
-    }
 }
