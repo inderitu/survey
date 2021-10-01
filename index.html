@@ -18,16 +18,16 @@
             
 
             <label class="details-label" id="name-label" for="name">First Name</label>
-            <input class="details" id="name" name="name" type="text" placeholder= "Enter your first name">
+            <input class="details" id="name" name="name" type="text" placeholder= "Enter your first name" required>
 
             <label class="details-label" id="name-label" for="name">Second Name</label>
-            <input class="details" id="name" name="name" type="text" placeholder="Enter your second name">
+            <input class="details" id="name" name="name" type="text" placeholder="Enter your second name" required>
            
             <label class="details-label" id="email-label" for="email">Email</label>
-            <input class="details" id="email" name="email" type="email" placeholder="Enter your email address">
+            <input class="details" id="email" name="email" type="email" placeholder="Enter your email address" required>
 
             <label class="details-label" id="number-label" for="number">Number</label>
-            <input class="details" id="number" name="number" type="number"  minlength="10" maxlength="10" placeholder="Phone nummber">
+            <input class="details" id="number" name="number" type="number"  min="10" max="10" placeholder="Phone nummber" required>
 
             <!-- create dropdown menus -->
             <label class="question" for="dropdown" id="drop-label">Choose your level of satisfaction with our designs:</label>
@@ -89,7 +89,7 @@
                               </svg>
                         </label>
                     </div>
-                    <p class="option"> Time it took to complete your project.</p>
+                    <p class="option"> Our speed.</p>
                 </div>
 
                 <div class="response">
@@ -102,38 +102,33 @@
                         </label>
                     </div>
                     <p class="option">The coffee.</p>
+                </div>   
+            </div>
+
+            <p class="question">Will you work with us in the future?</p>
+            <div id="future">
+                <div class="display">
+                    <input type="radio" name="future" id="definitely" value="yes">
+                    <label for="definitely">Definitely</label>
                 </div>
-                
-
-
+                <div class="display">
+                    <input type="radio" name="future" id="maybe" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div class="display">
+                    <input type="radio" name="future" id="no" value="no">
+                    <label for="no">No</label>
+    
+                </div>
             </div>
 
-
-
-            <p class="question" >Will you work with Design Center in the future?</p>
-            <div id="responseTwo">
-                <input class="response emoji" name="Definitely" type="radio">
-                <label for="Definitely">Definitely</label>
-
-                <input class="response emoji" name="maybe" type="radio">
-                <label for="maybe">Maybe</label>
-
-                <input class="response emoji" type="radio" name="no" class="response">
-                <label for="no">No</label>
-            </div>
-            
-
-        
-
-
-
-            <!-- create checkboxes -->
-            <label class="question" for="comments">What would you like to see improved about Design center?</label>
+            <label class="question" for="comments">What would you improve about Design center?</label>
             <textarea name="comments" id="comments" cols="30" rows="10" placeholder="You can be as detailed as possible..."></textarea>
 
-            <button type="submit">submit</button>
+            <button id="submit" type="submit">submit</button>
             <p class="thanks">Thank you for taking your time to help us improve our design process.</p>
         </form>
 </body>
 <script src="index.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

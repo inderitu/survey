@@ -50,7 +50,7 @@ label.details-label{
     align-self: flex-start;
     margin-left: 17%;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.265vw;
     margin-bottom: 2%;
 }
 input.details{
@@ -92,11 +92,11 @@ select{
     margin-left: 17%;
     margin-bottom: 2%;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.265vw;
 }
 p span{
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.15vw;
 }
 
 
@@ -122,7 +122,7 @@ div.response{
 .option{
     margin-left: 2%;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.265vw;
     color: rgb(83, 83, 83);
 }
 
@@ -167,8 +167,25 @@ div.check input:checked~ label svg{
     color: rgb(83, 83, 83);
 }
 
+#future{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+    margin-bottom: 2%;
+}
+div.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
+div.display label{
+    font-size: 1.265vw;
+    font-weight: 700;
+    color: rgb(83, 83, 83);
+}
 
 
 textarea{
@@ -201,7 +218,7 @@ button{
     width: 40%;
     transition: all 0.75s;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.265vw;
 }
 button:hover{
     background: #d3d0d0;
@@ -213,10 +230,76 @@ button:hover{
     font-size: 2vw;
 }
 
+/* tablet responsive */
+@media (max-width: 1000px){
+
+    #title{
+        font-size: 4vw;
+    }
+    #description{
+        font-size: 2vw;
+    }
+
+    #survey-form{
+        width: 80vw;
+    }
+
+    label.details-label{
+        font-size: 2vw;
+    }
+
+    .question{
+        font-size: 2vw;
+    }
+    p span{
+        font-size: 1.5vw;
+    }
+    .option{
+        font-size: 2vw;
+    }
+    div.display label{
+        font-size: 2vw;
+    }
+    button{
+        font-size: 2vw;
+    }
+}
+
 /* mobile responsive */
 
 @media (max-width: 550px){
+    /* font-size */
+    #title{
+        font-size: 4.5vw;
+    }
+    #description{
+        font-size: 2vw;
+    }
+
     #survey-form{
-        width: 80vw;
+        width: 90vw;
+    }
+
+    label.details-label{
+        font-size: 3vw;
+    }
+
+    .question{
+        font-size: 3vw;
+    }
+    p span{
+        font-size: 1.7vw;
+    }
+    .option{
+        font-size: 3vw;
+    }
+    div.display label{
+        font-size: 3vw;
+    }
+    button{
+        font-size: 3vw;
+    }
+    .thanks{
+        font-size: 3vw;
     }
 }
