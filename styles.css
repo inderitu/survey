@@ -280,25 +280,25 @@ button:hover{
     }
 
     label.details-label{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     .question{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     p span{
         font-size: 1.7vw;
     }
     .option{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     div.display label{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     button{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     .thanks{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 }
