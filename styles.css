@@ -57,7 +57,6 @@ input.details{
 
     border: none;
     background: none;
-    outline: none;
     box-shadow: inset 8px 8px 8px #cbced1,
                 inset -8px -8px 8px #fff;
 
@@ -94,7 +93,8 @@ select{
     font-weight: 700;
     font-size: 1.265vw;
 }
-p span{
+
+legend span{
     font-weight: 500;
     font-size: 1.15vw;
 }
@@ -124,6 +124,7 @@ div.response{
     font-weight: 700;
     font-size: 1.265vw;
     color: rgb(83, 83, 83);
+    cursor: pointer;
 }
 
 div.check{
@@ -159,9 +160,7 @@ div.check label svg{
     transform: scale(1.5);
     color: #fff;
 }
-div.check label svg:hover{
-    color: black;
-}
+
 
 div.check input:checked~ label svg{
     color: rgb(83, 83, 83);
@@ -181,10 +180,15 @@ div.display{
     align-items: center;
 }
 
+div.display input{
+    cursor: pointer;
+}
+
 div.display label{
     font-size: 1.265vw;
     font-weight: 700;
     color: rgb(83, 83, 83);
+    cursor: pointer;
 }
 
 
@@ -251,7 +255,7 @@ button:hover{
     .question{
         font-size: 2vw;
     }
-    p span{
+    legend span{
         font-size: 1.5vw;
     }
     .option{
@@ -286,7 +290,7 @@ button:hover{
     .question{
         font-size: 3vw;
     }
-    p span{
+    legend span{
         font-size: 1.7vw;
     }
     .option{

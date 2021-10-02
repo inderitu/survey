@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
+    <main>
         <form id="survey-form">
             <div class="title">
                 <h1 id="title"> Design Center Survey Form</h1>
@@ -20,14 +21,14 @@
             <label class="details-label" id="name-label" for="name">First Name</label>
             <input class="details" id="name" name="name" type="text" placeholder= "Enter your first name" required>
 
-            <label class="details-label" id="name-label" for="name">Second Name</label>
-            <input class="details" id="name" name="name" type="text" placeholder="Enter your second name" required>
+            <label class="details-label" id="name-label" for="second-name">Second Name</label>
+            <input class="details" id="name" name="second-name" type="text" placeholder="Enter your second name" required>
            
             <label class="details-label" id="email-label" for="email">Email</label>
             <input class="details" id="email" name="email" type="email" placeholder="Enter your email address" required>
 
             <label class="details-label" id="number-label" for="number">Number</label>
-            <input class="details" id="number" name="number" type="number"  min="10" max="10" placeholder="Phone nummber" required>
+            <input class="details" id="number" name="number" type="number"  min="8" max="15" placeholder="Phone nummber" required>
 
             <!-- create dropdown menus -->
             <label class="question" for="dropdown" id="drop-label">Choose your level of satisfaction with our designs:</label>
@@ -42,7 +43,7 @@
 
             <!-- create checkboxes -->
 
-            <p class="question">What did you love about Design Center? <span>(Check all that apply)</span> </p>
+            <legend class="question">What did you love about Design Center? <span>(Check all that apply)</span> </legend>
             <div id="response">
                 <div class="response">
                     <div class="check">
@@ -53,7 +54,7 @@
                               </svg>
                         </label>
                     </div>
-                    <p class="option">Working with the team.</p>
+                    <label class="option" for="one">Working with the team.</label>
                 </div>
 
                 <div class="response">
@@ -65,7 +66,7 @@
                               </svg>
                         </label>
                     </div>
-                    <p class="option">Our customer care service.</p>
+                    <label class="option" for="two">Our customer care service.</label>
                 </div>
 
                 <div class="response">
@@ -77,7 +78,7 @@
                               </svg>
                         </label>
                     </div>
-                    <p class="option">Our designs.</p>
+                    <label class="option" for="three">Our designs.</label>
                 </div>
 
                 <div class="response">
@@ -89,7 +90,7 @@
                               </svg>
                         </label>
                     </div>
-                    <p class="option"> Our speed.</p>
+                    <label class="option" for="four"> Our speed.</label>
                 </div>
 
                 <div class="response">
@@ -101,11 +102,11 @@
                               </svg>
                         </label>
                     </div>
-                    <p class="option">The coffee.</p>
+                    <label class="option" for="five">The coffee.</label>
                 </div>   
             </div>
 
-            <p class="question">Will you work with us in the future?</p>
+            <legend class="question">Will you work with us in the future?</legend>
             <div id="future">
                 <div class="display">
                     <input type="radio" name="future" id="definitely" value="yes">
@@ -128,6 +129,7 @@
             <button id="submit" type="submit">submit</button>
             <p class="thanks">Thank you for taking your time to help us improve our design process.</p>
         </form>
+    </main>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
